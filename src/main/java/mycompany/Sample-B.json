@@ -1,0 +1,48 @@
+{
+  "version": 1,  //필수
+  "layout": "B",  //필수
+  "contents": [   //필수
+    {
+      "id": "recent",  //필수
+      "title": "최근 사용 서식",  //필수
+      "items": [  //필수
+        {
+          "id": "C001",  //필수
+          "title": "비품신청서",  //필수
+          "description": "비품신청서", //선택
+          "url": "http://example.com/aprvDoc/draft/C001", //선택
+          "metadata": [ //선택
+            {
+              "label": "신청자", //필수
+              "text": "홍길동"  //필수
+            }
+          ]
+        },
+        {
+          "id": "C002", //필수
+          "title": "공유설비 활용신청서", //필수
+          "description": "공유설비 활용신청서", //선택
+          "url": "http://example.com/aprvDoc/draft/C002", //선택
+          "metadata": [ //선택
+            {
+              "label": "신청자", //필수
+              "text": "홍길동"  //필수
+            }
+          ]
+        }
+      ],
+      "onEmpty": {    //선택
+        "text": "최근 사용 서식이 없습니다.",  //필수
+        "url": "http://example.com"   //선택
+      }
+    },
+    {
+      "id": "aprv",
+      "title": "내가 올린 기안",
+      "items": [],
+      "onEmpty": {
+        "text": "내가 올린 기안이 없습니다."
+      }
+    }
+  ]
+}

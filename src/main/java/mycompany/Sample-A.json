@@ -1,0 +1,42 @@
+{
+  "version": 1,   //필수
+  "layout": "A",  //필수
+  "contents": [   //필수
+    {
+      "id": "2",  //필수
+      "title": "임직원 재택근무 시행 안내", //필수
+      "description": "임직원 재택근무 시행 안내", //선택
+      "url": "http://notify.example.com/2", //선택
+      "metadata": [ //선택
+        {
+          "label": "등록자",  //필수
+          "text": "인사담당"  //필수
+        },
+        {
+          "label": "등록일",  //필수
+          "text": "2020.02.26"  //필수
+        }
+      ]
+    },
+    {
+      "id": "1",  //필수
+      "title": "코로나19 바이러스 핫라인 안내",  //필수
+      "description": "코로나19 바이러스 핫라인 안내", //선택
+      "url": "http://notify.example.com/1",  //선택
+      "metadata": [ //선택
+        {
+          "label": "등록자", //필수
+          "text": "인사담당"  //필수
+        },
+        {
+          "label": "등록일",  //필수
+          "text": "2020.02.21"  //필수
+        }
+      ]
+    }
+  ],
+  "onEmpty": {  //선택
+    "text": "새로운 공지 사항이 없습니다.",  //필수
+    "url": "http://notify.example.com"   //선택
+  }
+}
